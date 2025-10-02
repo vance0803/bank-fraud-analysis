@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Bank Fraud Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{display:flex;height:100vh;background:#f5f5f5;color:#333;}
+    .sidebar{width:250px;background:#2E7D32;color:white;padding:1.5rem;display:flex;flex-direction:column;}
+    .sidebar h2{font-size:1.5rem;font-weight:700;margin-bottom:2rem;text-align:center;}
+    .sidebar a{color:white;text-decoration:none;display:block;padding:12px;border-radius:8px;margin-bottom:10px;transition:0.3s;font-weight:500;}
+    .sidebar a:hover,.sidebar a.active{background:#4CAF50;}
+    .main-content{flex:1;padding:2rem;overflow-y:auto;}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;}
+    .topbar h1{font-size:1.8rem;color:#2E7D32;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+    .card{background:white;padding:1.5rem;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
+    .card:hover{transform:translateY(-5px);}
+    .card i{font-size:2rem;color:#4CAF50;margin-bottom:10px;}
+    .card h3{font-size:1.2rem;margin-bottom:8px;}
+    .card p{font-size:0.95rem;color:#666;}
+    footer{margin-top:2rem;text-align:center;font-size:0.9rem;color:#555;}
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="dashboard.html" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    <a href="fraud-data.html"><i class="fas fa-database"></i> Fraud Data</a>
+    <a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+    <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <h1>Welcome, User!</h1>
+      <i class="fas fa-bell"></i>
+    </div>
+    <div class="cards">
+      <div class="card"><i class="fas fa-shield-alt"></i><h3>Total Frauds Detected</h3><p>145 Cases</p></div>
+      <div class="card"><i class="fas fa-bell"></i><h3>Alerts Sent</h3><p>320 Alerts</p></div>
+      <div class="card"><i class="fas fa-user-shield"></i><h3>Protected Accounts</h3><p>5,200 Users</p></div>
+      <div class="card"><i class="fas fa-database"></i><h3>Data Records</h3><p>1.2M Entries</p></div>
+    </div>
+    <footer>&copy; 2025 Bank Fraud Analysis | All Rights Reserved</footer>
+  </div>
+</body>
+</html>
+
+
